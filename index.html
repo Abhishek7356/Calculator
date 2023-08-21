@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body style="background-color: #343333;">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="calculator">
+                <div>
+                    <input id="result" placeholder="CASIO" type="text"  class="fs-1">
+                </div>
+                <div class="btns">
+                    <button onclick="clearScreen()" class="rounded-circle lght">AC</button>
+                    <button onclick="clearOne()" class="rounded-circle lght">DEL</button>
+                    <button onclick="displayNum('%')" class="rounded-circle lght">&#37;</button>
+                    <button onclick="displayNum('/')" class="rounded-circle lght">&#247;</button>
+                </div>
+                <div class="btns">
+                    <button onclick="displayNum(7)" class="rounded-circle">7</button>
+                    <button onclick="displayNum(8)" class="rounded-circle">8</button>
+                    <button onclick="displayNum(9)" class="rounded-circle">9</button>
+                    <button onclick="displayNum('*')" class="rounded-circle lght">&#215;</button>
+                </div>
+                <div class="btns">
+                    <button onclick="displayNum(4)" class="rounded-circle">4</button>
+                    <button onclick="displayNum(5)" class="rounded-circle">5</button>
+                    <button onclick="displayNum(6)" class="rounded-circle">6</button>
+                    <button onclick="displayNum('-')" class="rounded-circle lght">&#8722;</button>
+                </div>
+                <div class="btns">
+                    <button onclick="displayNum(1)" class="rounded-circle">1</button>
+                    <button onclick="displayNum(2)" class="rounded-circle">2</button>
+                    <button onclick="displayNum(3)" class="rounded-circle">3</button>
+                    <button onclick="displayNum('+')" class="rounded-circle lght">&#43;</button>
+                </div>
+                <div class="btns">
+                    <button onclick="displayNum(0)" class="rounded-pill" style="width: 120px;">0</button>
+                    <button onclick="displayNum('.')" class="rounded-circle">.</button>
+                    <button onclick="evaluateNum()" class="rounded-circle lght">&#61;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</body>
+
+</html>
