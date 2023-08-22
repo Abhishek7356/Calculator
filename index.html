@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="icon"
+        href="https://th.bing.com/th/id/R.d4ff7beac5c3f870539dec1b4391c65b?rik=EV9PX0muXUVQeQ&riu=http%3a%2f%2ffarm4.staticflickr.com%2f3045%2f4564840793_6da1fe2cd5_o.jpg&ehk=cUjI3HE5MgrVm4qoYrdzGR2dDqQ72hgOjZ0Mbym3NyI%3d&risl=&pid=ImgRaw&r=0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./script.js"></script>
 </head>
 
@@ -20,11 +25,12 @@
         <div class="col-md-4 d-flex justify-content-center">
             <div class="calculator">
                 <div>
-                    <input id="result" placeholder="CASIO" type="text"  class="fs-1">
+                    <input id="result" placeholder="CALCULATOR" type="text" class="fs-1">
                 </div>
                 <div class="btns">
                     <button onclick="clearScreen()" class="rounded-circle lght">AC</button>
-                    <button onclick="clearOne()" class="rounded-circle lght">DEL</button>
+                    <button onclick="clearOne()" class="rounded-circle lght"><i class="fa-solid fa-delete-left"
+                            style="color: #e0e1e4;"></i></button>
                     <button onclick="displayNum('%')" class="rounded-circle lght">&#37;</button>
                     <button onclick="displayNum('/')" class="rounded-circle lght">&#247;</button>
                 </div>
